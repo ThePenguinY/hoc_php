@@ -71,7 +71,7 @@ section header p:hover{
     clip-path: circle(302px at left -230px);
     z-index: -1;
 }
-
+    
 .circles{
     position: absolute;
     top: 0;
