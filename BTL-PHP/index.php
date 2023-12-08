@@ -52,7 +52,7 @@
             cho nhân viên tư vấn hoặc đến cửa hàng để được hỗ trợ nhanh nhất.</p>
       </div>
       <div class="background_img">
-         <img src="https://as2.ftcdn.net/v2/jpg/02/82/10/69/1000_F_282106997_cu2uB4YSmmTjXagqdlTjQ0EOYthhzdZR.jpg" alt="Image not found">
+         <img src="../IMG/DressEX.png" alt="Image not found">
       </div>
 
       <div class = "btn">
@@ -61,27 +61,51 @@
       </div>
    </section>
 
-   <!-- content -->
-   <div class="about">
-      <div class= "box">
-         <h3 class="info">Đầm ngắn</h3>
-         <h3 class="info">Đầm dài</h3>
-         <h3 class="info">Đầm ren</h3>
-         <h3 class="info">Áo dài</h3>
-         <h3 class="info">Phụ kiện</h3>
-      </div>
-      <hr>
+   <footer class="footer">
+      <div  class="main">
+         <div  class="row">
+            <div class="footer_col">
+               <h4>Company</h4>
+               <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Our services</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">Affiliate program</a></li>
+               </ul>
+            </div>
 
-      <div class="">
-         <h1>Products</h1>
-         <p>----Ckothes----</p>
-         <div class="clothes_box">
-            <div class="clothes_card" >
-               <h1>Clothes</h1>
-               <p> </p>
+            <div class="footer_col">
+               <h4>Get help</h4>
+               <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Shipping</a></li>
+                  <li><a href="#">Return</a></li>
+                  <li><a href="#">Payment option</a></li>
+               </ul>
+            </div>
+
+            <div class="footer_col">
+               <h4>Mặt hàng</h4>
+               <ul>
+                  <li><a href="damNgan.php">Đầm ngắn</a></li>
+                  <li><a href="damDai.php">Đầm dài</a></li>
+                  <li><a href="damRen.php">Đầm ren</a></li>
+                  <li><a href="aoDai.php">Áo dài</a></li>
+                  <li><a href="phuKien.php">Phụ kiện</a></li>
+               </ul>
+            </div>
+
+            <div class="footer_col">
+               <h4>Follow us</h4>
+               <div  class="socials">
+                  <a href="#"><img src="../IMG/Facebook_Logo_(2019).png" alt="Image not found"></a>
+                  <a href="#"><img src="../IMG/Instagram_logo_2022.png" alt="Image not found"></a>
+                  <a href="#"><img src="../IMG/Gmail_icon_(2020).svg.png" alt="Image not found"></a>
+                  <a href="#"><img src="../IMG/X-Logo.png" alt="Image not found"></a>
+               </div>
             </div>
          </div>
       </div>
-   </div>
+   </footer>
 </body>
 </html>
