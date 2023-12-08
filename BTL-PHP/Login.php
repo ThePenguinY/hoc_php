@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="styleLogin.css">
 </head>
 <body>
+    <section>
+        <header>
+        <div class="circle"></div>
+        <div class="circles"></div>
+        <a href="index.php" class="logo">
+            Ribit
+            <span>Store</span>
+        </a>
+    </section>
     <div class="center">
         <h1>Đăng nhập</h1>
         <form method="post">

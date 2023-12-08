@@ -6,9 +6,6 @@
    <title>Ribit Store - Bridal Wedding Dress</title>
    <link rel="stylesheet" href="./styleMainMenu.css">
 </head>
-<style>
-
-</style>
 <body>
    <!--Main Menu-->
 
