@@ -13,34 +13,37 @@
       <header>
       <div class="circle"></div>
       <div class="circles"></div>
-      <a href="#" class="logo">
+      <a href="index.php" class="logo">
          Ribit
          <span>Store</span>
       </a>
       <ul>
          <li>
-            <a href="#">Đầm ngắn</a>
+            <a href="damNgan.php">Đầm ngắn</a>
          </li>
          <li>
-            <a href="#">Đầm dài</a>
+            <a href="damDai.php">Đầm dài</a>
          </li>
          <li>
-            <a href="#">Đầm ren</a>
+            <a href="damRen.php">Đầm ren</a>
          </li>
          <li>
-            <a href="#">Áo dài</a>
+            <a href="aoDai.php">Áo dài</a>
          </li>
          <li>
-            <a href="#">Đầm màu</a>
+            <a href="damMau.php">Đầm màu</a>
          </li>
          <li>
-            <a href="#">Phụ kiện</a>
+            <a href="phuKien.php">Phụ kiện</a>
          </li>
          <li>
-            <a href="#">About</a>
+            <a href="about.php">About</a>
+         </li>
+         <li>
+            <a href = "Login.php">Đăng nhập</a>
          </li>
       </ul>
-      <p>Đăng nhập</p>
+      
       </header>
       <div class="texts">
          <h1>Ribit

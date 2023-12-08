@@ -48,19 +48,6 @@ section header ul li a:hover {
     color: pink;
 }
 
-section header p{
-    cursor: pointer;
-    padding: 10px 25px;
-    border: 1px solid pink;
-    border-radius: 30px;
-    transition: 0.3s;
-}
-
-section header p:hover{
-    color: white;
-    background: pink;
-}
-
 .circle{
     position: absolute;
     top: 0;
