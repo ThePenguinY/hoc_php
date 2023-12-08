@@ -6,6 +6,9 @@
    <title>Ribit Store - Bridal Wedding Dress</title>
    <link rel="stylesheet" href="./styleMainMenu.css">
 </head>
+<style>
+
+</style>
 <body>
    <!--Main Menu-->
 
@@ -31,16 +34,13 @@
             <a href="aoDai.php">Áo dài</a>
          </li>
          <li>
-            <a href="damMau.php">Đầm màu</a>
-         </li>
-         <li>
             <a href="phuKien.php">Phụ kiện</a>
          </li>
          <li>
             <a href="about.php">About</a>
          </li>
          <li>
-            <a href = "Login.php">Đăng nhập</a>
+            <a class="btn-login" href = "Login.php">Đăng nhập</a>
          </li>
       </ul>
       
@@ -62,5 +62,26 @@
    </section>
 
    <!-- content -->
+   <div class="about">
+      <div class= "box">
+         <h3 class="info">Đầm ngắn</h3>
+         <h3 class="info">Đầm dài</h3>
+         <h3 class="info">Đầm ren</h3>
+         <h3 class="info">Áo dài</h3>
+         <h3 class="info">Phụ kiện</h3>
+      </div>
+      <hr>
+
+      <div class="">
+         <h1>Products</h1>
+         <p>----Ckothes----</p>
+         <div class="clothes_box">
+            <div class="clothes_card" >
+               <h1>Clothes</h1>
+               <p> </p>
+            </div>
+         </div>
+      </div>
+   </div>
 </body>
 </html>
