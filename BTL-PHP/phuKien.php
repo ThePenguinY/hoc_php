@@ -30,9 +30,6 @@
             <a href="aoDai.php">Áo dài</a>
          </li>
          <li>
-            <a href="damMau.php">Đầm màu</a>
-         </li>
-         <li>
             <a href="phuKien.php">Phụ kiện</a>
          </li>
          <li>
