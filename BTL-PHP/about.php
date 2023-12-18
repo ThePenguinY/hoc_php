@@ -36,10 +36,25 @@
             <a href="about.php">About</a>
          </li>
          <li>
-            <a href = "Login.php">Đăng nhập</a>
+            <a class="btn-login" href = "Login.php">Đăng nhập</a>
          </li>
       </ul>
     </section>
 
+    <footer class="footer">
+      <div  class="main">
+         <div  class="row">
+            <div class="footer_col">
+               <h4>Follow us</h4>
+               <div  class="socials">
+                  <a href="#"><img src="../IMG/Facebook_Logo_(2019).png" alt="Image not found"></a>
+                  <a href="#"><img src="../IMG/Instagram_logo_2022.png" alt="Image not found"></a>
+                  <a href="#"><img src="../IMG/Gmail_icon_(2020).svg.png" alt="Image not found"></a>
+                  <a href="#"><img src="../IMG/X-Logo.png" alt="Image not found"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
 </body>
 </html>

@@ -45,8 +45,7 @@
       <div class="texts">
          <h1>Ribit
             <span>Store</span></h1>
-         <p>Để mang lại sự thuận tiện cho Quý Khách. Xin vui lòng gọi trực tiếp 
-            cho nhân viên tư vấn hoặc đến cửa hàng để được hỗ trợ nhanh nhất.</p>
+         <p></p>
       </div>
       <div class="background_img">
          <img src="../IMG/DressEX.png" alt="Image not found">
@@ -61,37 +60,6 @@
    <footer class="footer">
       <div  class="main">
          <div  class="row">
-            <div class="footer_col">
-               <h4>Company</h4>
-               <ul>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Our services</a></li>
-                  <li><a href="#">Privacy policy</a></li>
-                  <li><a href="#">Affiliate program</a></li>
-               </ul>
-            </div>
-
-            <div class="footer_col">
-               <h4>Get help</h4>
-               <ul>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Shipping</a></li>
-                  <li><a href="#">Return</a></li>
-                  <li><a href="#">Payment option</a></li>
-               </ul>
-            </div>
-
-            <div class="footer_col">
-               <h4>Mặt hàng</h4>
-               <ul>
-                  <li><a href="damNgan.php">Đầm ngắn</a></li>
-                  <li><a href="damDai.php">Đầm dài</a></li>
-                  <li><a href="damRen.php">Đầm ren</a></li>
-                  <li><a href="aoDai.php">Áo dài</a></li>
-                  <li><a href="phuKien.php">Phụ kiện</a></li>
-               </ul>
-            </div>
-
             <div class="footer_col">
                <h4>Follow us</h4>
                <div  class="socials">
