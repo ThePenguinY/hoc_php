@@ -3,47 +3,44 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Ribit Store - Bridal Wedding Dress</title>
+   <title>Meo Store - Bridal Wedding Dress</title>
    <link rel="stylesheet" href="./styleMainMenu.css">
 </head>
 <body>
-   <!--Main Menu-->
-
+   <!--Header-->
    <section>
       <header>
-      <div class="circle"></div>
-      <div class="circles"></div>
-      <a href="index.php" class="logo">
-         Ribit
-         <span>Store</span>
-      </a>
-      <ul>
-         <li>
-            <a href="damNgan.php">Đầm ngắn</a>
-         </li>
-         <li>
-            <a href="damDai.php">Đầm dài</a>
-         </li>
-         <li>
-            <a href="damRen.php">Đầm ren</a>
-         </li>
-         <li>
-            <a href="aoDai.php">Áo dài</a>
-         </li>
-         <li>
-            <a href="phuKien.php">Phụ kiện</a>
-         </li>
-         <li>
-            <a href="about.php">About</a>
-         </li>
-         <li>
-            <a class="btn-login" href = "Login.php">Đăng nhập</a>
-         </li>
-      </ul>
-      
+         <div class="circle"></div>
+         <div class="circles"></div>
+         <a href="index.php" class="logo">
+            Meo <span>Store</span>
+         </a>
+         <ul>
+            <li>
+               <a href="damNgan.php">Đầm ngắn</a>
+            </li>
+            <li>
+               <a href="damDai.php">Đầm dài</a>
+            </li>
+            <li>
+               <a href="damRen.php">Đầm ren</a>
+            </li>
+            <li>
+              <a href="aoDai.php">Áo dài</a>
+            </li>
+            <li>
+               <a href="phuKien.php">Phụ kiện</a>
+            </li>
+            <li>
+               <a href="about.php">About</a>
+            </li>
+            <li>
+               <a class="btn-login" href = "Login.php">Đăng nhập</a>
+            </li>
+         </ul>
       </header>
       <div class="texts">
-         <h1>Ribit
+         <h1>Meo
             <span>Store</span></h1>
          <p></p>
       </div>
@@ -56,7 +53,17 @@
          <p>Thuê</p>
       </div>
    </section>
+   <hr>
 
+   <div class="dress-type">
+      <div class="box">
+         <div class="category">
+            <a href="">Đầm ngắn</a>
+         </div>
+      </div>
+
+   </div>
+   <!--Bottom-->
    <footer class="footer">
       <div  class="main">
          <div  class="row">

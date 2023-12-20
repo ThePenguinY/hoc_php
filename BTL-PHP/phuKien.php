@@ -13,7 +13,7 @@
       <div class="circle"></div>
       <div class="circles"></div>
       <a href="index.php" class="logo">
-         Ribit
+         Meo
          <span>Store</span>
       </a>
       <ul>
