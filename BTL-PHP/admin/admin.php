@@ -16,14 +16,14 @@
             Meo <span>Store</span>
          </a>
          <ul>
-            <li>
-               <a href="../product/product.php">Sản phẩm</a>
+            <li>  
+               <a href="../product/product.php">Product</a>
             </li>
             <li>
-               <a href="../product/product.php">Người dùng</a>
+               <a href="../product/product.php">User</a>
             </li>
             <li>
-               <a class="btn-login" href = "Login.php">Logout</a>
+               <a class="btn-login" href = "Login.php">Dang xuat</a>
             </li>
             <li>
                <a class="btn-login" href = "Login.php">Userpanel</a>
