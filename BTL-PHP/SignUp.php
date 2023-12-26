@@ -18,7 +18,7 @@
     </section>
     <div class="center">
         <h1>Đăng nhập</h1>
-        <form action="Login.php" method="post">
+        <form method="post">
             <div class="txt_field">
                 <input type="text" required>
                 <span></span>
@@ -31,7 +31,6 @@
             </div>
             <div class="pass">Forgot Password?</div>
             <input type="submit" value="Login">
-            <button type="submit">Login</button>
             <div class="signup_link" >
                 Not a member? <a href="#">Signup</a>
             </div>
@@ -53,27 +52,5 @@
          </div>
       </div>
    </footer>
-
-   <?php
-        include 'connect.php';
-        
-        if ($_SERVER["REQUEST_METHOD"] == "POST"){
-            $username = $_POST['username'];
-            $password = $_POST['password'];
-        
-            $sql = "SELECT * FROM account WHERE username='$username' AND password='$password'";
-            $result = $conn->query($sql);
-        
-            if ($result->num_rows == 1) {
-                // Login successful
-                echo "Login successful!";
-                // You can redirect the user or perform other actions here
-            } else {
-                // Login failed
-                echo "Invalid email or password";
-            }
-        }
-        $conn->close();
-   ?>
 </body>
 </html>
