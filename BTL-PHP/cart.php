@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleMainMenu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <title>About</title>
 </head>
 <body>
@@ -30,13 +32,13 @@
             <a href="aoDai.php">Áo dài</a>
          </li>
          <li>
-            <a href="phuKien.php">Phụ kiện</a>
+            <a href="cart.php" style="color: pink;">Giỏ hàng</a>
          </li>
          <li>
-            <a href="about.php">About</a>
+            <a class="btn-login" href = "logout.php">Logout</a>
          </li>
          <li>
-            <a class="btn-login" href = "Login.php">Đăng nhập</a>
+            <a class="btn-login" href = "admin.php">Admin</a>
          </li>
       </ul>
     </section>

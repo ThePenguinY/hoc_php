@@ -5,6 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Meo Store - Bridal Wedding Dress</title>
    <link rel="stylesheet" href="./styleMainMenu.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
    <!--Header-->
@@ -29,13 +30,7 @@
               <a href="aoDai.php">Áo dài</a>
             </li>
             <li>
-               <a href="phuKien.php">Phụ kiện</a>
-            </li>
-            <li>
-               <a href="about.php">Giỏ hàng</a>
-            </li>
-            <li>
-               <a class="btn-login" href = "Login.php">Đăng nhập</a>
+               <a class="btn-login" href = "login.php">Login</a>
             </li>
             <li>
                <a class="btn-login" href = "admin.php">Admin</a>
@@ -50,97 +45,47 @@
       <div class="background_img">
          <img src=".//IMG/DressEX.png" alt="Image not found">
       </div>
-
-      <div class = "btn">
-         <p class="read">More</p>
-         <p>Thuê</p>
-      </div>
    </section>
    <hr>
+
    <div class="dress-type">
       <div class="popular">
          <h1>Hàng nổi bật</h1>
-         <p>----Đầm ngắn----</p>
-         <div class="boxDamNgan">
-            <div class="cardDamNgan">
-               <img src=".//IMG/DH00152.png" alt="Img not found">
-               <h1>Price</h1>
-               <!--<p>Thông tin sản phẩm :</p> -->
-               <a href="" class="btn">DH00152</a>
-            </div>
-            <div class="cardDamNgan">
-               <img src=".//IMG/DH00152.png" alt="Img not found">
-               <h1>DH00152</h1>
-               <!--<p>Thông tin sản phẩm :</p> -->
-               <a href="" class="btn">DH00152</a>
-            </div>
-            <div class="cardDamNgan">
-               <img src=".//IMG/DH00152.png" alt="Img not found">
-               <h1>DH00152</h1>
-               <!--<p>Thông tin sản phẩm :</p> -->
-               <a href="" class="btn">DH00152</a>
-            </div>
-            <div class="cardDamNgan">
-               <img src=".//IMG/DH00152.png" alt="Img not found">
-               <h1>DH00152</h1>
-               <!--<p>Thông tin sản phẩm :</p> -->
-               <a href="" class="btn">DH00152</a>
-            </div>
-         </div>
-      </div>
-
-      <div class="popular">
-         <p>----Đầm dài----</p>
-         <div class="boxDamDai">
-            <div class="cardDamDai">
-               <img src=".//IMG/DH00152.png" alt="Img not found">
-               <h1>Price</h1>
-               <a href="" class="btn">DH00152</a>
-            </div>
-            <div class="cardDamDai">
-               <img src=".//IMG/DH00152.png" alt="Img not found">
-               <h1>Price</h1>
-               <a href="" class="btn">DH00152</a>
-            </div>
-            <div class="cardDamDai">
-               <img src=".//IMG/DH00152.png" alt="Img not found">
-               <h1>Price</h1>
-               <a href="" class="btn">DH00152</a>
-            </div>
-            <div class="cardDamDai">
-               <img src=".//IMG/DH00152.png" alt="Img not found">
-               <h1>Price</h1>
-               <a href="" class="btn">DH00152</a>
-            </div>
-         </div>
-      </div>
-
-      <div class="popular">
-         <p>----Đầm ren----</p>
-         <div class="boxDamDai">
-            <div class="cardDamDai">
-               <img src=".//IMG/DH00152.png" alt="Img not found">
-               <h1>Price</h1>
-               <a href="" class="btn">DH00152</a>
-            </div>
-            <div class="cardDamDai">
-               <img src=".//IMG/DH00152.png" alt="Img not found">
-               <h1>Price</h1>
-               <a href="" class="btn">DH00152</a>
-            </div>
-            <div class="cardDamDai">
-               <img src=".//IMG/DH00152.png" alt="Img not found">
-               <h1>Price</h1>
-               <a href="" class="btn">DH00152</a>
-            </div>
-            <div class="cardDamDai">
-               <img src=".//IMG/DH00152.png" alt="Img not found">
-               <h1>Price</h1>
-               <a href="" class="btn">DH00152</a>
-            </div>
-         </div>
       </div>
    </div>
+
+   <div class="container-fluid">
+      <div class="colmd-12">
+         <div class="row">
+            <?php 
+               include 'connect.php';
+               $Record = mysqli_query($connect,'select * from product');
+                  while ($row = mysqli_fetch_array($Record)){
+                     $check_page = $row['productType'];
+                     if ($check_page ==='home'){
+
+                     
+
+               echo "
+                  <div class ='col-md-6 col-lg-4 m-auto mb-3'>
+                     <div class='card m-auto' style ='width: 18rem;'>
+                        <img src='$row[image]' class='card-img-top'>
+                        <div class='card-body text-center'>
+                           <h5 class='card-title fs-4 fw-bold'>$row[name]</h5>
+                           <p class='card-text card-title fs-4 fw-bold'>Price: $row[price] Đồng</p>
+                           <input type='number' value='min='1' max = '20' ' placeholder='Số lượng'><br><br>
+                           <input type='submit' class='btn btn-danger text-white w-100' value='Thêm vào giỏ hàng'>
+                        </div>
+                     </div>
+                  </div>
+                  ";   
+               }
+            }
+            ?>
+            </div>
+      </div>
+   </div>
+
    <!--Bottom-->
    <footer class="footer">
       <div  class="main">

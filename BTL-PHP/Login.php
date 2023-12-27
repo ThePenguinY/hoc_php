@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng nhập</title>
     <link rel="stylesheet" href="styleLogin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
     <section>
@@ -18,20 +20,19 @@
     </section>
     <div class="center">
         <h1>Đăng nhập</h1>
-        <form action="Login.php" method="post">
+        <form action="./login1.php" method="post" >
             <div class="txt_field">
-                <input type="text" required>
+                <input type="text" required name="username">
                 <span></span>
                 <label>Username</label>
             </div>
             <div class="txt_field">
-                <input type="password" required>
+                <input type="text" required name="userpassword">
                 <span></span>
                 <label>Password</label>
             </div>
             <div class="pass">Forgot Password?</div>
             <input type="submit" value="Login">
-            <button type="submit">Login</button>
             <div class="signup_link" >
                 Not a member? <a href="#">Signup</a>
             </div>
