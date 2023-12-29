@@ -43,8 +43,10 @@
          </header>
 
    <!--Middle-->
-
-   
+   <div class="dress-type">
+   <div class="popular">
+         <h1>Thanh toán</h1>
+         </div>
    <div class="container-fluid">
       <div class="row justify-content-around">
          <div class="col-sm-12 col-md-6 col-lg-9">
@@ -57,9 +59,7 @@
                   <th>Tổng giá</th>
                   <th>Cập nhật sản phẩm</th>
                   <th>Xoá sản phẩm</th>
-                  <th></th>
-               </thead>
-               <tbody>
+              </thead>
                <?php 
                   
                   session_start();

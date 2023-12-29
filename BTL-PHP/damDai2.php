@@ -72,17 +72,17 @@
                               <input type='hidden' name = 'price' value = '$row[price]'>
                               <input type='number' name = 'quantity' value='min='1' max = '20' ' placeholder='Số lượng'><br><br>
                               <input type='submit' name='addCart' class='btn1 btn-danger text-white w-100' value='Thêm vào giỏ hàng'>
+                              </div>
                            </div>
-                        </div>
-                     </form>
-                  </div>
-                  ";   
+                        </form>
+                     </div>
+                     ";   
+                  }
                }
-            }
-            ?>
-            </div>
+               ?>
+               </div>
+         </div>
       </div>
-   </div>
 
    <!--Bottom-->
    <footer class="footer">
