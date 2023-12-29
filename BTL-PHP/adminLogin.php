@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
+    <title>Đăng nhập</title>
     <link rel="stylesheet" href="styleLogin.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -19,32 +19,20 @@
         </a>
     </section>
     <div class="center">
-        <h1>Signup</h1>
-        <form method="post" action="insertAccount.php">
+        <h1>Admin Login</h1>
+        <form action="./login1.php" method="post" >
             <div class="txt_field">
-                <input type="text" required name="createName">
+                <input type="text" required name="username">
                 <span></span>
                 <label>Username</label>
             </div>
             <div class="txt_field">
-                <input type="text" required name="createEmail">
-                <span></span>
-                <label>Email</label>
-            </div>
-            <div class="txt_field">
-                <input type="number" required name="createPN">
-                <span></span>
-                <label>Phone number</label>
-            </div>
-            <div class="txt_field">
-                <input type="text" required name="createPassword">
+                <input type="text" required name="userpassword">
                 <span></span>
                 <label>Password</label>
             </div>
-            <input name="submit" type="submit" value="Signup">
-            <div class="signup_link" >
-                Already have account? <a href="login.php">Login</a>
-            </div>
+            <div class="pass">Forgot Password?</div>
+            <input type="submit" value="Login">
         </form>
     </div>
 
@@ -63,5 +51,27 @@
          </div>
       </div>
    </footer>
+
+   <?php
+        include 'connect.php';
+        
+        if ($_SERVER["REQUEST_METHOD"] == "POST"){
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+        
+            $sql = "SELECT * FROM account WHERE username='$username' AND password='$password'";
+            $result = $conn->query($sql);
+        
+            if ($result->num_rows == 1) {
+                // Login successful
+                echo "Login successful!";
+                // You can redirect the user or perform other actions here
+            } else {
+                // Login failed
+                echo "Invalid email or password";
+            }
+        }
+        $conn->close();
+   ?>
 </body>
 </html>

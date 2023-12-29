@@ -13,33 +13,32 @@
       <header>
          <div class="circle"></div>
          <div class="circles"></div>
-         <a href="index.php" class="logo">
+         <a href="index2.php" class="logo">
             Meo <span>Store</span>
          </a>
          <ul>
             <li>
-               <a href="damNgan.php">Đầm ngắn</a>
+               <a href="damNgan2.php">Đầm ngắn</a>
             </li>
             <li>
-               <a href="damDai.php">Đầm dài</a>
+               <a href="damDai2.php">Đầm dài</a>
             </li>
             <li>
-               <a href="damRen.php">Đầm ren</a>
+               <a href="damRen2.php">Đầm ren</a>
             </li>
             <li>
-              <a href="aoDai.php">Áo dài</a>
+              <a href="aoDai2.php">Áo dài</a>
             </li>
             <li>
-               <a href="cart.php">Giỏ hàng</a>
+              <a href="cart.php">Giỏ hàng</a>
             </li>
             <li>
-               <a class="btn-login" href = "logout.php">Logout</a>
+               <a class="btn-login" href = "userLogout.php">Logout</a>
             </li>
             <li>
-               <a class="btn-login" href = "admin.php">Admin</a>
+               <a class="btn-login" href = "adminLogin.php">Admin</a>
             </li>
          </ul>
-      </header>
       </header>
       <div class="texts">
          <h1>Meo
@@ -72,18 +71,18 @@
 
                echo "
                   <div class ='col-md-6 col-lg-4 m-auto mb-3'>
-                  <form action='insertCart.php' method='POST'>
-                     <div class='card m-auto' style ='width: 18rem;'>
-                        <img src='$row[image]' class='card-img-top'>
-                        <div class='card-body text-center'>
-                           <h5 class='card-title fs-4 fw-bold'>$row[name]</h5>
-                           <p class='card-text card-title fs-4 fw-bold'>Price: $row[price] Đồng</p>
-                           <input type='hidden' name = 'name' value ='$row[name]'>
-                           <input type='hidden' name = 'price' value = '$row[price]'>
-                           <input type='number' name = 'quantity' value='min='1' max = '20' ' placeholder='Số lượng'><br><br>
-                           <input type='submit' name='addCart' class='btn1 btn-danger text-white w-100' value='Thêm vào giỏ hàng'>
+                     <form action='insertCart.php' method='POST'>
+                        <div class='card m-auto' style ='width: 18rem;'>
+                           <img src='$row[image]' class='card-img-top'>
+                           <div class='card-body text-center'>
+                              <h5 class='card-title fs-4 fw-bold'>$row[name]</h5>
+                              <p class='card-text card-title fs-4 fw-bold'>Price: $row[price] Đồng</p>
+                              <input type='hidden' name = 'name' value ='$row[name]'>
+                              <input type='hidden' name = 'price' value = '$row[price]'>
+                              <input type='number' name = 'quantity' value='min='1' max = '20' ' placeholder='Số lượng'><br><br>
+                              <input type='submit' name='addCart' class='btn1 btn-danger text-white w-100' value='Thêm vào giỏ hàng'>
+                           </div>
                         </div>
-                     </div>
                      </form>
                   </div>
                   ";   

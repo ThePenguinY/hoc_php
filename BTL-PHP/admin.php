@@ -28,13 +28,13 @@
             <li>
                <a href="product.php">Product</a>
             <li>
-               <a href="../product/product.php">User</a>
+               <a href="settingUser.php">User</a>
             </li>
             <li>
-               <a class="btn-login" href = "login.php">Logout</a>
+               <a class="btn-login" href = "logout.php">Logout</a>
             </li>
             <li>  
-               <a class="btn-login" href = "login.php">Userpanel</a>
+               <a class="btn-login" href = "">Userpanel</a>
             </li>
          </ul>
       </header>  

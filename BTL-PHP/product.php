@@ -18,16 +18,16 @@
             </a>
             <ul>
                 <li>
-                   <a href="">Product</a>
+                   <a href="product.php">Product</a>
                 </li>
                 <li>
-                   <a href="">User</a>
+                   <a href="settingUser.php">User</a>
                 </li>
                 <li>
-                   <a class="btn-login" href = "login.php">Logout</a>
+                   <a class="btn-login" href = "logout.php">Logout</a>
                 </li>
                 <li>
-                   <a class="btn-login" href = "login.php">Userpanel</a>
+                   <a class="btn-login" href = "">Userpanel</a>
                 </li>
             </ul>
         </header>  
@@ -44,7 +44,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="formGroupExampleInput" class="form-label">Nhập giá sản phẩm:</label>
-                            <input type="text" name="price" class="form-control" id="formGroupExampleInput" placeholder="Giá sản phẩm">
+                            <input type="number" name="price" class="form-control" id="formGroupExampleInput" placeholder="Giá sản phẩm">
                         </div>
                         <div class="mb-3">
                             <label for="formGroupExampleInput" class="form-label">Nhập ảnh sản phẩm:</label>
@@ -78,6 +78,7 @@
                             <th>Image</th>
                             <th>Category</th>
                             <th>Delete</th>
+                            <th>Update</th>
                         </thead>
 
                         <tbody class="text-center">
@@ -93,13 +94,15 @@
                                         <td>$row[price]</td>
                                         <td><img src='$row[image]' height='100px'></td>
                                         <td>$row[productType]</td>
-                                        <td><a href='' class = 'btn-danger btn'>Home</a></td>
+                                        <td><a href='delete.php? ID= $row[id]' class = 'btn-danger btn1'>Delete</a></td>
+                                        <td><a href='update.php? ID= $row[id]' class = 'btn-warning btn1'>Update</a></td>
                                     </tr>
                                     ";
                             ?>
                         </tbody>
                     </table>
                 </div>
+                
             </div>
         </div>
     </section>

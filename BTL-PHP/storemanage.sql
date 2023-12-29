@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 28, 2023 at 11:05 AM
+-- Generation Time: Dec 29, 2023 at 12:13 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -44,6 +44,27 @@ INSERT INTO `admin` (`id`, `username`, `userpassword`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `payments`
+--
+
+CREATE TABLE `payments` (
+  `payment_id` int(11) NOT NULL,
+  `card_number` varchar(16) NOT NULL,
+  `expiry_date` varchar(10) NOT NULL,
+  `cvv` varchar(4) NOT NULL,
+  `payment_date` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
+
+--
+-- Dumping data for table `payments`
+--
+
+INSERT INTO `payments` (`payment_id`, `card_number`, `expiry_date`, `cvv`, `payment_date`) VALUES
+(1, '1231312', '13123123', '232', '2023-12-28 22:40:48');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `product`
 --
 
@@ -60,7 +81,7 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `name`, `price`, `image`, `productType`) VALUES
-(1, 'DH00152', 950000, 'UploadImg/damNgan1.png', 'damNgan'),
+(1, 'Đầm ngắn DH00152', 950000, 'UploadImg/damNgan1.png', 'home'),
 (2, 'DH00151', 890000, 'UploadImg/damNgan2.png', 'damNgan'),
 (3, 'DH00153', 950000, 'UploadImg/damNgan3.png', 'damNgan'),
 (4, 'DH00150', 890000, 'UploadImg/damNgan4.png', 'damNgan'),
@@ -80,6 +101,30 @@ INSERT INTO `product` (`id`, `name`, `price`, `image`, `productType`) VALUES
 (21, 'DH00133', 2390000, 'UploadImg/aoDai1.png', 'home'),
 (22, 'DH00144', 1590000, 'UploadImg/damRen1.png', 'home');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `number` varchar(100) NOT NULL,
+  `userpassword` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `email`, `number`, `userpassword`) VALUES
+(1, 'YvaH', 'yva@gmail.com', '123456789', 'abc123456'),
+(3, 'Ngoc', 'ngoc@gmai.com', '1122334455', '00000000'),
+(4, 'Thi', 'thi@gmai.com', '9988776655', '00000000'),
+(6, 'eqeqwe', 'qưeqe', '3123', 'ưqeqe');
+
 --
 -- Indexes for dumped tables
 --
@@ -91,10 +136,24 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `payments`
+--
+ALTER TABLE `payments`
+  ADD PRIMARY KEY (`payment_id`);
+
+--
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -107,10 +166,22 @@ ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT for table `payments`
+--
+ALTER TABLE `payments`
+  MODIFY `payment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
