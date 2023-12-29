@@ -11,8 +11,6 @@
    <!--Header-->
    <section>
       <header>
-         <div class="circle"></div>
-         <div class="circles"></div>
          <a href="index2.php" class="logo">
             Meo <span>Store</span>
          </a>
@@ -40,15 +38,6 @@
             </li>
          </ul>
       </header>
-      <div class="texts">
-         <h1>Meo
-            <span>Store</span></h1>
-         <p></p>
-      </div>
-      <div class="background_img">
-         <img src=".//IMG/DressEX.png" alt="Image not found">
-      </div>
-   </section>
    <div class="dress-type">
       <div class="popular">
          <h1>Hàng nổi bật</h1>

@@ -41,15 +41,6 @@
             </li>
          </ul>
          </header>
-      <div class="texts">
-         <h1>Meo
-            <span>Store</span></h1>
-         <p></p>
-      </div>
-      <div class="background_img">
-         <img src=".//IMG/DressEX.png" alt="Image not found">
-      </div>
-    </section>
 
    <!--Middle-->
 
@@ -59,13 +50,13 @@
          <div class="col-sm-12 col-md-6 col-lg-9">
             <table class="table table-bordered text-center">
                <thead class="">
-                  <th>No.</th>
-                  <th>Product Name</th>
-                  <th>Product Prize</th>
-                  <th>Product Quantity</th>
-                  <th>Total Price</th>
-                  <th>Update</th>
-                  <th>Delete</th>
+                  <th>STT</th>
+                  <th>Tên sản phẩm</th>
+                  <th>Giá sản phẩm</th>
+                  <th>Số lượng sản phẩm</th>
+                  <th>Tổng giá</th>
+                  <th>Cập nhật sản phẩm</th>
+                  <th>Xoá sản phẩm</th>
                   <th></th>
                </thead>
                <tbody>
@@ -101,9 +92,9 @@
             </table>
          </div>
          <div class="col-lg-3 text-center">
-            <h3>Total</h3>
+            <h3>Tổng cộng</h3>
             <h1><?php echo number_format($total) ?></h1>
-            <td><button name ="checkOut" class = "btn1 btn-danger">Check out</button></td>
+            <td><button name ="checkOut" class = "btn1 btn-danger">Thanh toán</button></td>
          </div>
          
       </div>
@@ -111,20 +102,5 @@
 
 
    <!--Bottom-->
-   <footer class="footer">
-      <div  class="main">
-         <div  class="row">
-            <div class="footer_col">
-               <h4>Follow us</h4>
-               <div  class="socials">
-                  <a href="https://www.facebook.com/nguyenhoanganh.yva/"><img src=".//IMG/Facebook_Logo_(2019).png" alt="Image not found"></a>
-                  <a href="https://www.instagram.com/yvah47/"><img src=".//IMG/Instagram_logo_2022.png" alt="Image not found"></a>
-                  <a href="https://mail.google.com/mail/u/0/#inbox"><img src=".//IMG/Gmail_icon_(2020).svg.png" alt="Image not found"></a>
-                  <a href="https://twitter.com/YvaH_JustY"><img src=".//IMG/X-Logo.png" alt="Image not found"></a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </footer>
 </body>
 </html>

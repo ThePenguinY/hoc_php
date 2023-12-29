@@ -40,15 +40,6 @@
             </li>
          </ul>
       </header>
-      <div class="texts">
-         <h1>Meo
-            <span>Store</span></h1>
-         <p></p>
-      </div>
-      <div class="background_img">
-         <img src=".//IMG/DressEX.png" alt="Image not found">
-      </div>
-   </section>
    <hr>
 
    <div class="dress-type">

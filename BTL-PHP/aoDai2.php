@@ -40,9 +40,9 @@
             </li>
          </ul>
       </header>
-   <div class="dress-type">
+      <div class="dress-type">
       <div class="popular">
-         <h3>Hàng nổi bật</h3>
+         <h1>Hàng nổi bật</h1>
       </div>
    </div>
 
